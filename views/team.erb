@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <% @team_data.each do |key, value| %>
+    <h2><%= "#{@full_param_names[key]}: #{value}"  %></h2>
+   <% end %>
+
 
 
  </body>
 </html>
-
-
